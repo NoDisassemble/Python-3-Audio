@@ -34,12 +34,12 @@ while True:
             print("")
         else:
             x = "-"
-            for i in range(1, 45):
+            for i in range(1, 41):
                 print(x, end="")
             print("")
             print("[!] Generating", hertz,"hz for", duration, "Seconds [!]")
             x = "-"
-            for i in range(1, 45):
+            for i in range(1, 41):
                 print(x, end="")
             print("")
             winsound.Beep(int(hertz),int(duration*1000))

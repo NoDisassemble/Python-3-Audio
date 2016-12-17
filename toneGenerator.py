@@ -17,7 +17,7 @@ NoDisessemble.me
 
 while True:
     try:
-        hertz=int(input("Choose a frequency in hertz: 37 - 32,767: "))
+        hertz=int(input("Choose a frequency in hz: 37 - 32,767: "))
     except ValueError:
         print("")
         print("Invalid entry:")

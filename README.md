@@ -1,2 +1,3 @@
 # Python
-Python 3 Applications
+Python 3 Applications...
+Everything from Hacking to Music

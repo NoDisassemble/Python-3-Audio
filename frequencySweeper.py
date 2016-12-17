@@ -58,7 +58,15 @@ while True:
             continue
     if answer in ["No", "no"]:
         print("")
+        x = "-"
+        for i in range(1, 35):
+            print(x, end="")
+        print("")
         print("[!] Exiting program...")
+        x = "-"
+        for i in range(1, 35):
+            print(x, end="")
+        print("")
         quit()
     else:
         print("")

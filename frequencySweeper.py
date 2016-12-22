@@ -9,9 +9,11 @@ ___________                                                          _________
      \/                \/   |__|           \/     \/     \/\/              \/             \/     \/|__|        \/
 
 ---------------------------------------------------------------------------------------------------------------------------
-Dec 2016 v1.0
+Simple program that sweeps a fixed frequency range from user input.
+Keywords [Frequency Sweeper, Tone Sweeper, Sound Sweeper, Frequency Range]
+2016 v1.0
 by
-NoDisessemble.me
+NoDisassemble.me
 ---------------------------------------------------------------------------------------------------------------------------
 ''')
 

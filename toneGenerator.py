@@ -9,9 +9,11 @@ ___________                      ________                                   __
                     \/     \/          \/     \/     \/     \/           \/
 
 -----------------------------------------------------------------------------------------------------------------------------------
-Dec 2016 v1.0
+Simple program that generates a tone from user input using the winsound.Beep module.
+Keywords [Tone Generator, Note Generator, Beep Generator, winsound.Beep]
+2016 v1.0
 by
-NoDisessemble.me
+NoDisassemble.me
 -----------------------------------------------------------------------------------------------------------------------------------
 ''')
 

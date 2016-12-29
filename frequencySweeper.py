@@ -11,7 +11,7 @@ ___________                                                          _________
 
 ---------------------------------------------------------------------------------------------------------------------------
 Description: Simple program that sweeps a fixed frequency range from user input.
-Keywords: [Frequency Sweeper, Tone Sweeper, Sound Sweeper, Frequency Range]
+Keywords: [Python 3, Frequency Sweeper, Tone Sweeper, Sound Sweeper, Frequency Range]
 2016 v1.0
 by
 NoDisassemble.me

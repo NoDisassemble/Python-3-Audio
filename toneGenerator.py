@@ -20,7 +20,7 @@ NoDisassemble.me
 
 while True:
     try:
-        hertz=int(input("Choose a frequency in hz: 37 - 32767: "))
+        hertz = int(input("Choose a frequency in hz: 37 - 32767: "))
         if hertz < 37:
             print("")
             print("[!] Invalid entry [!]")
@@ -46,7 +46,7 @@ while True:
         print("")
     else:
         try:
-            duration=int(input("How many Seconds to play? "))
+            duration = int(input("How many Seconds to play? "))
             print("")
         except ValueError:
             print("")
@@ -58,15 +58,16 @@ while True:
             for i in range(1, 41):
                 print(x, end="")
             print("")
-            print("[!] Generating", hertz,"hz for", duration, "Seconds [!]")
+            print("[!] Generating", hertz, "hz for", duration, "Seconds [!]")
             x = "-"
             for i in range(1, 41):
                 print(x, end="")
             print("")
-            print("[+] ", hertz, "hz [+]")
-            winsound.Beep(int(hertz),int(duration*1000))
             print("")
-            print("[+] Tone Complete:")
+            print("[+] ", hertz, "hz [+]")
+            winsound.Beep(int(hertz), int(duration*1000))
+            print("")
+            print("[!] Tone Complete [!]")
             print("")
             input("Press [Enter] to generate another tone:")
             print("")

@@ -20,8 +20,8 @@ NoDisassemble.me
 ''')
 
 while True:
-    start=40
-    answer=input("Start Frequency Sweep? [Yes or No]: ")
+    start = 40
+    answer = input("Start Frequency Sweep? [Yes or No]: ")
 
     if answer in ["Yes", "yes", "Y", "y"]:
         try:
@@ -52,9 +52,9 @@ while True:
                 print(x, end="")
             print("")
             while start < 32767:
-                winsound.Beep(start,1000)
-                print("[+}",start, "hz")
-                start = start +int(increment)
+                winsound.Beep(start, 1000)
+                print("[+}", start, "hz")
+                start += int(increment)
                 time.sleep(wait)
             x = "-"
             for i in range(1, 35):

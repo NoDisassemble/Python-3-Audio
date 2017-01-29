@@ -1,4 +1,5 @@
 import winsound
+import time
 
 print('''
 ===========================================================================================================================
@@ -11,8 +12,8 @@ ___________                                                          _________
 
 ---------------------------------------------------------------------------------------------------------------------------
 Description: Simple program that sweeps a fixed frequency range from user input.
-Keywords: [Python 3, Frequency Sweeper, Tone Sweeper, Sound Sweeper, Frequency Range]
-2016 v1.0
+Keywords: [Frequency Sweeper, Tone Sweeper, Sound Sweeper, Frequency Range]
+2016 v2.0
 by
 NoDisassemble.me
 ---------------------------------------------------------------------------------------------------------------------------
@@ -22,9 +23,17 @@ while True:
     start=40
     answer=input("Start Frequency Sweep? [Yes or No]: ")
 
-    if answer in ["Yes", "yes"]:
+    if answer in ["Yes", "yes", "Y", "y"]:
         try:
             increment = int(input("In What Increments? "))
+        except ValueError:
+            print("")
+            print("[!] Invalid Response:")
+            input("Press enter to try again:")
+            print("")
+            continue
+        try:
+            wait = float(input("Duration in seconds: "))
         except ValueError:
             print("")
             print("[!] Invalid Response:")
@@ -46,6 +55,7 @@ while True:
                 winsound.Beep(start,1000)
                 print("[+}",start, "hz")
                 start = start +int(increment)
+                time.sleep(wait)
             x = "-"
             for i in range(1, 35):
                 print(x, end="")
@@ -59,7 +69,7 @@ while True:
             input("Press Enter to do another sweep:")
             print("")
             continue
-    if answer in ["No", "no"]:
+    if answer in ["No", "no", "N", "n"]:
         print("")
         x = "-"
         for i in range(1, 35):

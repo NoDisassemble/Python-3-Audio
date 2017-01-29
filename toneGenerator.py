@@ -12,7 +12,7 @@ ___________                      ________                                   __
 -------------------------------------------------------------------------------------------------
 Description: Simple program that generates a tone from user input using the winsound.Beep module.
 Keywords: [Python 3, Tone Generator, Note Generator, Beep Generator, winsound.Beep]
-2016 v1.0
+2016 v2.0
 by
 NoDisassemble.me
 -------------------------------------------------------------------------------------------------
@@ -20,7 +20,25 @@ NoDisassemble.me
 
 while True:
     try:
-        hertz=int(input("Choose a frequency in hz: 37 - 32,767: "))
+        hertz=int(input("Choose a frequency in hz: 37 - 32767: "))
+        if hertz < 37:
+            print("")
+            print("[!] Invalid entry [!]")
+            print("[!] Frequency must be 37 hz or higher [!]")
+            print("")
+            input("Press Enter to try again")
+            print("")
+            continue
+        if hertz > 32767:
+            print("")
+            print("[!] Invalid entry [!]")
+            print("[!] Frequency cannot exceed 32767 [!]")
+            print("")
+            input("Press Enter to try again")
+            print("")
+            continue
+        else:
+            pass
     except ValueError:
         print("")
         print("Invalid entry:")
@@ -45,6 +63,7 @@ while True:
             for i in range(1, 41):
                 print(x, end="")
             print("")
+            print("[+] ", hertz, "hz [+]")
             winsound.Beep(int(hertz),int(duration*1000))
             print("")
             print("[+] Tone Complete:")
